@@ -20,6 +20,9 @@ hr {
   border: 1px solid #b7b7b7;
 }
 /* Header */
+.mobile__header {
+  display: none;
+}
 .header {
   max-width: 1140px;
   margin: 0 auto;
