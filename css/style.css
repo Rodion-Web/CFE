@@ -77,10 +77,6 @@ hr {
   color: #ffffff;
 }
 /* Mobile header */
-.mobile__header {
-  display: none;
-  z-index: 1;
-}
 /* Burger menu */
 .visuallyHidden {
   position: absolute;
@@ -474,6 +470,10 @@ footer {
   .header {
     background-color: #1a1313;
     padding-top: 0;
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    width: 375px;
   }
   .mobile__header {
     display: block;
@@ -481,6 +481,12 @@ footer {
   }
   .mobile__menu {
     display: none;
+    position: fixed;
+    top: 87px;
+    left: 0;
+    width: 100%;
+    height: 788px;
+    z-index: 10000;
   }
   .is-open {
     display: block;
@@ -510,7 +516,7 @@ footer {
     max-width: 375px;
   }
   .container__main {
-    margin-top: 56px;
+    margin-top: 130px;
     margin-left: 16px;
   }
   .container__main h1 {
