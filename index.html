@@ -9,10 +9,26 @@
     <link rel="stylesheet" href="css/normalize.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="navbar">
+        <div class="mobile__header">
+          <input
+            type="checkbox"
+            id="checkbox1"
+            class="checkbox1 visuallyHidden"
+          />
+          <label for="checkbox1">
+            <div class="hamburger hamburger1">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+              <span class="bar bar3"></span>
+              <span class="bar bar4"></span>
+            </div>
+          </label>
+          <div class="mobile__menu"></div>
+        </div>
         <a href="/index.html" class="logo">
-          <img src="img/logo.png" alt="logo: metting" class="logo-image" />
+          <img src="img/logo.png" alt="logo: CFE" class="logo-image" />
         </a>
         <p>Centre France Export (CFE) CIFAL Groupe</p>
         <!-- Навигация -->
@@ -52,9 +68,7 @@
         <p>Notre devise : efficacité et flexibilité !</p>
         <button class="container__main__button">
           <span class="button__text">En savior plus</span>
-          <a href="#">
-            <img src="img/arrow-button.png" alt="" />
-          </a>
+          <img src="img/arrow-button.png" alt="" />
         </button>
       </div>
     </div>
@@ -116,43 +130,53 @@
       </div>
     </div>
     <div class="sending__form">
-      <div class="sending__form__left">
-        <h1>Vous avez encore des questions ?</h1>
-        <p>Demandez des informations complémentaires ou un devis !</p>
-        <form action="send.php" method="POST">
-          <div class="email_block">
+      <div class="inputs">
+        <div class="sending__form__left">
+          <h1>Vous avez encore des questions ?</h1>
+          <p>Demandez des informations complémentaires ou un devis !</p>
+          <form action="send.php" method="POST">
+            <div class="email_block">
+              <input
+                type="text"
+                name="name"
+                placeholder="E-mail"
+                class="email_block_edit"
+              />
+            </div>
+            <div class="question_block">
+              <input
+                type="text"
+                name="phone"
+                placeholder="Écrivez votre question"
+                class="question_block_edit"
+              />
+            </div>
+          </form>
+          <div class="checkbox">
             <input
-              type="text"
-              name="name"
-              placeholder="E-mail"
-              class="email_block_edit"
+              class="custom-checkbox"
+              type="checkbox"
+              id="color-1"
+              name="color-1"
+              value="indigo"
+              required
             />
+            <label for="color-1"
+              >Je suis d'accord avec la
+              <a href="#">politique de confidentialité</a></label
+            >
+            <button type="submit" class="container__main__button send__button">
+              <span class="button__text">Envoyer</span>
+              <img src="img/arrow-send.png" alt="" />
+            </button>
           </div>
-          <div class="question_block">
-            <input
-              type="text"
-              name="phone"
-              placeholder="Écrivez votre question"
-              class="question_block_edit"
-            />
-          </div>
-        </form>
-        <div class="checkbox">
-          <input
-            class="custom-checkbox"
-            type="checkbox"
-            id="color-1"
-            name="color-1"
-            value="indigo"
-          />
-          <label for="color-1"
-            >Je suis d'accord avec la
-            <a href="#">politique de confidentialité</a></label
-          >
         </div>
       </div>
       <div class="sending__form__right">
         <img src="img/sending_form_right.png" alt="" />
+      </div>
+      <div class="sending__form__right_mobile">
+        <img src="./img/sending_for_right_mobile.png" alt="" />
       </div>
     </div>
     <footer>
@@ -178,5 +202,6 @@
         </ul>
       </div>
     </footer>
+    <script src="../js/script.js"></script>
   </body>
 </html>
