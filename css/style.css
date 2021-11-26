@@ -8,6 +8,10 @@
   font-family: "Bebas Neue";
   src: url("../fonts/Bebas_Neue/BebasNeue-Regular.ttf") format("truetype");
 }
+html,
+body {
+  overflow-x: hidden;
+}
 body {
   background-image: url(../img/header-bg.png);
   background-repeat: no-repeat;
