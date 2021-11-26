@@ -8,7 +8,6 @@
   font-family: "Bebas Neue";
   src: url("../fonts/Bebas_Neue/BebasNeue-Regular.ttf") format("truetype");
 }
-html,
 body {
   overflow-x: hidden;
 }
@@ -304,6 +303,7 @@ hr {
   padding-left: 148px;
   padding-top: 96px;
   padding-right: 234px;
+  height: 644px;
 }
 .sending__form__left h1 {
   font-family: "Mulish";
@@ -453,7 +453,7 @@ footer {
   margin-top: 30px;
   margin-left: -40px;
 }
-.footer__info__list li {
+.footer__info p {
   font-family: "Mulish";
   font-style: normal;
   font-weight: normal;
@@ -462,9 +462,6 @@ footer {
   color: #ffffff;
   list-style: none;
   margin-bottom: 10px;
-}
-.footer__info__list__name {
-  font-weight: bold;
 }
 /* Media */
 @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
@@ -557,6 +554,7 @@ footer {
   /* Third container */
   .container__third {
     margin-left: 16px;
+    margin-top: 30px;
   }
   .container__third > div {
     flex-direction: column;
@@ -577,6 +575,7 @@ footer {
   }
   .sending__form__right_mobile {
     display: block;
+    height: 752px;
   }
   .sending__form__left {
     padding-left: 16px;
@@ -609,11 +608,34 @@ footer {
     padding-left: 16px;
     padding-right: 16px;
     position: relative;
+    height: 378px;
+  }
+  .footer__menu {
+    margin-right: 0;
   }
   .footer__menu ul {
     column-count: 1;
+    margin-left: -23px;
+    margin-top: -8px;
   }
-  .footer__info__list {
+  .footer__info {
     position: absolute;
+    margin-left: 16px;
+    margin-top: 200px;
+  }
+  .footer__info p:nth-child(2) {
+    margin-top: 37px;
+    opacity: 0.7;
+  }
+  .footer__info p:last-of-type {
+    position: absolute;
+    top: 22px;
+    left: 125px;
+    opacity: 0.7;
+  }
+  .footer__info p:first-of-type {
+    top: 48px;
+    position: absolute;
+    width: 329px;
   }
 }
