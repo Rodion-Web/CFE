@@ -20,7 +20,7 @@ hr {
   display: none;
 }
 .header {
-  background: url(./img/header-bg.png) no-repeat center top / cover;
+  background: url(../img/header-bg.png) no-repeat center top / cover;
   height: 744px;
   margin: 0 auto;
   padding-top: 40px;
@@ -734,7 +734,7 @@ footer {
     overflow-x: hidden;
   }
   .header {
-    background: url(./img/header-bg-mobile.png) no-repeat center top / cover;
+    background: url(../img/header-bg-mobile.png) no-repeat center top / cover;
     height: 634px;
     padding: 0;
   }
