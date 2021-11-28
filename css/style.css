@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mulish:wght@400;700&display=swap");
 @font-face {
   font-family: "SFPRODISPLAYREGULAR";
   src: url("../fonts/sf-pro-display-cufonfonts/SFPRODISPLAYREGULAR.OTF")
@@ -11,11 +11,7 @@
 body {
   overflow-x: hidden;
 }
-body {
-  background-image: url(../img/header-bg.png);
-  background-repeat: no-repeat;
-  background-position: top;
-}
+
 hr {
   border: 1px solid #b7b7b7;
 }
@@ -24,11 +20,13 @@ hr {
   display: none;
 }
 .header {
-  max-width: 1140px;
+  background: url(/img/header-bg.png) no-repeat center top / cover;
+  height: 744px;
   margin: 0 auto;
   padding-top: 40px;
 }
 .navbar {
+  max-width: 1140px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -215,7 +213,7 @@ hr {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  margin-top: 70px;
+  margin-top: -28px;
   padding-left: 31px;
   padding-right: 31px;
   max-width: 1377px;
@@ -302,7 +300,7 @@ hr {
   padding-left: 148px;
   padding-top: 96px;
   padding-right: 234px;
-  height: 644px;
+  height: 648px;
 }
 .sending__form__left h1 {
   font-family: "Mulish";
@@ -462,33 +460,296 @@ footer {
   list-style: none;
   margin-bottom: 10px;
 }
+/* Team page */
+/* Management */
+.management {
+  max-width: 1440px;
+  max-height: 616px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.container__one__right img {
+  width: 821px;
+  height: 616px;
+}
+.container__one__left {
+  background: #e0e0e0;
+}
+.container__one__left > div {
+  padding: 89px 32px 0 150px;
+  width: 438px;
+}
+.container__one__left h1 {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 120%;
+  color: #000000;
+}
+.container__one__left p {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 171%;
+  color: #000000;
+}
+/* Container__two */
+.container__two {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 116px;
+  margin-bottom: 32px;
+}
+.container__two h1 {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 120%;
+  color: #000000;
+  width: 438px;
+  margin: 0;
+}
+.card-people {
+  width: 555px;
+  justify-content: space-between;
+  display: flex;
+}
+.card-people-text h2 {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 133%;
+  color: #000000;
+}
+.card-people-text p {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 171%;
+  color: #000000;
+}
+.card-people img {
+  height: 203px;
+  margin-top: 20px;
+}
+.card-people-text span {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: #000000;
+}
+.card-people-text {
+  margin-left: 32px;
+}
+/* Container three */
+.container__three {
+  margin-top: 154px;
+  margin-bottom: 32px;
+}
+.container__three > div {
+  margin-top: 93px;
+  display: flex;
+  justify-content: space-between;
+}
+.container__three h1 {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  color: #000000;
+}
+.container__three__list {
+  margin-inline-start: -40px;
+  margin-top: 30px;
+}
+.container__three__list {
+  list-style-type: none;
+}
+.container__three__list > li span {
+  text-indent: -5px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #000000;
+}
+.container__three__list > li:before {
+  content: "-";
+  text-indent: -5px;
+}
+.container__three__list > li span {
+  position: relative;
+  left: 5px;
+}
+/* Container four */
+.container__four > div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 81px;
+}
+.container__four__block {
+  height: 480px;
+}
+/* Container five */
+.container__five {
+  margin-top: 80px;
+}
+.container__five h1 {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 120%;
+  color: #000000;
+  width: 438px;
+}
+.container__five > div {
+  display: flex;
+  justify-content: space-between;
+}
+.container__five > div > div {
+  width: 320px;
+}
+.container__five > div > div p {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 171%;
+  color: #000000;
+}
+/* Services page */
+.container__services__one,
+.container__services__two {
+  display: flex;
+  justify-content: space-between;
+}
+.container__services h1 {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 120%;
+  color: #000000;
+  width: 555px;
+}
+.left p,
+.right ul {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 171%;
+  color: #000000;
+  width: 438px;
+}
+.right ul > li {
+  color: red;
+}
+.right ul > li span {
+  color: #000000;
+}
+.left h2,
+.right h2 {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 133%;
+  color: #000000;
+  width: 438px;
+}
+.left-mobile {
+  display: none;
+}
+/* Contacts page */
+.contacts {
+  display: flex;
+  justify-content: space-between;
+}
+.contacts h1 {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 125%;
+  color: #000000;
+}
+.contacts a,
+.contacts p {
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 171%;
+  color: #000000;
+  text-decoration: none;
+}
+.container__contacts {
+  background: none;
+  padding: 0;
+  display: inline-block;
+}
+.container__contacts h1 {
+  width: 390px;
+}
+.container__contacts p {
+  width: 320px;
+}
+.contacts > div:first-child {
+  margin-left: 100px;
+  margin-right: 50px;
+}
+
+.container__contacts .question_block_edit {
+  background: #e0e0e0;
+  width: 319px;
+}
+.container__contacts .email_block_edit {
+  background: #e0e0e0;
+  width: 319px;
+  height: 32px;
+}
+.container__contacts .checkbox {
+  width: 400px;
+  display: inline-block;
+}
+.container__contacts .custom-checkbox + label {
+  display: block;
+  font-size: 12px;
+}
+.container__contacts button {
+  background: red;
+}
 /* Media */
 @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
   body {
-    background-image: url(../img/header-bg-mobile.png);
-    background-repeat: no-repeat;
-    background-position: top;
+    overflow-x: hidden;
+  }
+  .header {
+    background: url(/img/header-bg-mobile.png) no-repeat center top / cover;
+    height: 634px;
+    padding: 0;
   }
   /* header */
-  .header {
-    background-color: #1a1313;
-    padding-top: 0;
-    position: fixed;
-    z-index: 10000;
-    top: 0;
-    width: 375px;
-  }
   .mobile__header {
-    display: block;
+    max-width: 375px;
+    display: flex;
     height: 87px;
+    background-color: #1a1313;
   }
   .mobile__menu {
     display: none;
-    position: fixed;
+    position: absolute;
     top: 87px;
-    left: 0;
     width: 100%;
-    height: 788px;
     z-index: 10000;
   }
   .is-open {
@@ -504,8 +765,9 @@ footer {
     display: none;
   }
   .navbar a {
-    padding-left: 84px;
-    padding-right: 124px;
+    left: 124px;
+    top: 22px;
+    position: absolute;
   }
   .container {
     max-width: 375px;
@@ -519,7 +781,6 @@ footer {
     max-width: 375px;
   }
   .container__main {
-    margin-top: 130px;
     margin-left: 16px;
   }
   .container__main h1 {
@@ -534,15 +795,12 @@ footer {
   .container__main__button {
     width: 342px;
     height: 64px;
-    margin-top: 17px;
   }
   /* Second container */
   .container__second {
     flex-direction: column;
     padding-left: 16px;
-    padding-right: 16px;
-    margin-top: 40px;
-    margin-bottom: 136px;
+    margin-bottom: 66px;
   }
   .container__second__block {
     width: 319px;
@@ -576,8 +834,8 @@ footer {
     margin-top: -15px;
   }
   /* Sending form */
-  .sending__form__left {
-    position: absolute;
+  .sending__form {
+    margin-top: 41px;
   }
   .sending__form__right {
     display: none;
@@ -591,7 +849,7 @@ footer {
     padding-right: 16px;
     max-width: 305px;
     padding-top: 20px;
-    height: 612px;
+    height: 592px;
   }
   .inputs {
     position: absolute;
@@ -610,6 +868,31 @@ footer {
     width: 302px;
     margin-top: 22px;
   }
+  /* Services page */
+
+  .container__services__one,
+  .container__services__two {
+    flex-direction: column;
+  }
+  .container__services h1,
+  .container__services p,
+  .container__services h2 {
+    width: 343px;
+    padding-left: 16px;
+  }
+  .container__services ul {
+    width: 330px;
+  }
+  .container__services__form {
+    margin-top: -5px;
+  }
+  .left {
+    display: none;
+  }
+  .left-mobile {
+    display: block;
+  }
+
   /* Footer */
   footer {
     width: 343px;
