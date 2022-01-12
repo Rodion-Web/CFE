@@ -1,63 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Services</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/normalize.css" />
-  </head>
-  <body>
-    <div class="container container__services">
-      <h1>Le CFE : un «guichet unique» pour tous vos besoins</h1>
-      <div class="container container__services__one">
-        <div class="left">
-          <h2>Une offre de services particulièrement complète</h2>
-          <p>
-            Le CFE propose une gamme de services particulièrement complète en
-            Russie et en CEI pour répondre au mieux aux besoins de chaque
-            entreprise française, quel que soit son secteur d'activité et son
-            projet.
-          </p>
-        </div>
-        <div class="right">
-          <h2>Gamme Prospection Russie & CEI</h2>
-          <ul>
-            <li><span>Test du potentiel marché de vos produits (TPM)</span></li>
-            <li>
-              <span>Organisation de missions de rendez-vous sur mesure</span>
-            </li>
-            <li>
-              <span
-                >Accompagnement et interprétariat pendant vos déplacements en
-                Russie</span
-              >
-            </li>
-            <li>
-              <span
-                >Réalisation d'études de marché et de veilles sectorielles ou
-                produits</span
-              >
-            </li>
-            <li>
-              <span
-                >Visite de salons professionnels et de conférences pour le
-                compte de votre société</span
-              >
-            </li>
-            <li>
-              <span
-                >Sourcing en Rusise (tout type : matières premières, produits
-                semi-finis ou finis)</span
-              >
-            </li>
-          </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/normalize.css" />
+</head>
+
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <div class="mobile__header">
+        <input type="checkbox" id="checkbox1" class="checkbox1 visuallyHidden" />
+        <label for="checkbox1">
+          <div class="hamburger hamburger1">
+            <span class="bar bar1"></span>
+            <span class="bar bar2"></span>
+            <span class="bar bar3"></span>
+            <span class="bar bar4"></span>
+          </div>
+        </label>
+        <div class="mobile__menu"></div>
+      </div>
+      <div class="navbar">
+        <a href="./index.html" class="logo">
+          <img src="img/logo.png" alt="logo: CFE" class="logo-image" />
+        </a>
+        <p>Centre France Export (CFE) CIFAL Groupe</p>
+        <!-- Навигация -->
+        <div class="navbar-panel">
+          <nav class="navbar-menu">
+            <ul class="menu">
+              <li class="menu-item">
+                <a href="#" class="menu-link">Accueil</a>
+              </li>
+              <li class="menu-item">
+                <a href="team.html" class="menu-link">Notre équipe</a>
+              </li>
+              <li class="menu-item">
+                <a href="./services.html" class="menu-link">Nos services</a>
+              </li>
+              <li class="menu-item">
+                <a href="./contacts.html" class="menu-link">Contacts</a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link">
+                  <img src="img/russian.png" alt="" />
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="#" class="menu-link">
+                  <img src="img/eng.png" alt="" />
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
-      <div class="container container__services__two">
-        <div class="left">
-          <!-- <h2>Téléchargez notre brochure !</h2>
+    </div>
+  </header>
+  <div class="container container__services">
+    <h1>Le CFE : un «guichet unique» pour tous vos besoins</h1>
+    <div class="container container__services__one">
+      <div class="left">
+        <h2>Une offre de services particulièrement complète</h2>
+        <p>
+          Le CFE propose une gamme de services particulièrement complète en
+          Russie et en CEI pour répondre au mieux aux besoins de chaque
+          entreprise française, quel que soit son secteur d'activité et son
+          projet.
+        </p>
+      </div>
+      <div class="right">
+        <h2>Gamme Prospection Russie & CEI</h2>
+        <ul>
+          <li><span>Test du potentiel marché de vos produits (TPM)</span></li>
+          <li>
+            <span>Organisation de missions de rendez-vous sur mesure</span>
+          </li>
+          <li>
+            <span>Accompagnement et interprétariat pendant vos déplacements en
+              Russie</span>
+          </li>
+          <li>
+            <span>Réalisation d'études de marché et de veilles sectorielles ou
+              produits</span>
+          </li>
+          <li>
+            <span>Visite de salons professionnels et de conférences pour le
+              compte de votre société</span>
+          </li>
+          <li>
+            <span>Sourcing en Rusise (tout type : matières premières, produits
+              semi-finis ou finis)</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container container__services__two">
+      <div class="left">
+        <!-- <h2>Téléchargez notre brochure !</h2>
           <p>
             Pour vous offrir une gamme de services aussi complète, le CFE
             s'appuie sur ses propres compétences et sur un réseau de partenaires
@@ -70,95 +115,75 @@
             <span class="button__text">Télécharger</span>
             <img src="img/arrow-send.png" alt="" />
           </button> -->
-          <img src="img/telecharger.png" alt="" />
-        </div>
-        <div class="right">
-          <h2>Gamme Représentation Russie & CEI</h2>
-          <ul>
-            <li><span>Représentation commerciale en Russie et en CEI</span></li>
-            <li><span>Import et distribution de vos produits</span></li>
-            <li><span>Logistique, dédouanement, gestion de stocks</span></li>
-            <li><span>Certification et homologation de vos produits</span></li>
-            <li><span>Hébergement et portage salarial</span></li>
-            <li>
-              <span
-                >Mise en place d'un SAV (maintenance, réparation) pour vos
-                produits</span
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="left-mobile">
-          <img src="img/telecharger-mobile.png" alt="" />
-        </div>
+        <img src="img/telecharger.png" alt="" />
       </div>
-    </div>
-    <div class="sending__form container__services__form">
-      <div class="inputs">
-        <div class="sending__form__left">
-          <h1>Vous avez encore des questions ?</h1>
-          <p>Demandez des informations complémentaires ou un devis !</p>
-          <form action="send.php" method="POST">
-            <div class="email_block">
-              <input
-                type="text"
-                name="name"
-                placeholder="E-mail"
-                class="email_block_edit"
-              />
-            </div>
-            <div class="question_block">
-              <input
-                type="text"
-                name="phone"
-                placeholder="Écrivez votre question"
-                class="question_block_edit"
-              />
-            </div>
-          </form>
-          <div class="checkbox">
-            <input
-              class="custom-checkbox"
-              type="checkbox"
-              id="color-1"
-              name="color-1"
-              value="indigo"
-              required
-            />
-            <label for="color-1"
-              >Je suis d'accord avec la
-              <a href="#">politique de confidentialité</a></label
-            >
-            <button type="submit" class="container__main__button send__button">
-              <span class="button__text">Envoyer</span>
-              <img src="img/arrow-send.png" alt="" />
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="sending__form__right">
-        <img src="img/sending_form_right.png" alt="" />
-      </div>
-      <div class="sending__form__right_mobile">
-        <img src="img/sending_for_right_mobile.png" alt="" />
-      </div>
-    </div>
-    <footer>
-      <div class="footer__info">
-        <p>Centre France Export (CFE) CIFAL Groupe © 2021</p>
-        <p>+7 968 468 16 30</p>
-        <p>ml@cfexport.ru</p>
-      </div>
-      <div class="footer__menu">
-        <ul class="footer__menu_list">
-          <li><a href="#" class="footer-menu-link">Contacts</a></li>
-          <li><a href="#" class="footer-menu-link">Site corporate CIFAL</a></li>
-          <li><a href="#" class="footer-menu-link">Mentions légales</a></li>
-          <li><a href="#" class="footer-menu-link">Accueil</a></li>
-          <li><a href="#" class="footer-menu-link">Notre équipe</a></li>
-          <li><a href="#" class="footer-menu-link">Nos services</a></li>
+      <div class="right">
+        <h2>Gamme Représentation Russie & CEI</h2>
+        <ul>
+          <li><span>Représentation commerciale en Russie et en CEI</span></li>
+          <li><span>Import et distribution de vos produits</span></li>
+          <li><span>Logistique, dédouanement, gestion de stocks</span></li>
+          <li><span>Certification et homologation de vos produits</span></li>
+          <li><span>Hébergement et portage salarial</span></li>
+          <li>
+            <span>Mise en place d'un SAV (maintenance, réparation) pour vos
+              produits</span>
+          </li>
         </ul>
       </div>
-    </footer>
-  </body>
+      <div class="left-mobile">
+        <img src="img/telecharger-mobile.png" alt="" />
+      </div>
+    </div>
+  </div>
+  <div class="sending__form container__services__form">
+    <div class="inputs">
+      <div class="sending__form__left">
+        <h1>Vous avez encore des questions ?</h1>
+        <p>Demandez des informations complémentaires ou un devis !</p>
+        <form action="send.php" method="POST">
+          <div class="email_block">
+            <input type="text" name="name" placeholder="E-mail" class="email_block_edit" />
+          </div>
+          <div class="question_block">
+            <input type="text" name="phone" placeholder="Écrivez votre question" class="question_block_edit" />
+          </div>
+        </form>
+        <div class="checkbox">
+          <input class="custom-checkbox" type="checkbox" id="color-1" name="color-1" value="indigo" required />
+          <label for="color-1">Je suis d'accord avec la
+            <a href="#">politique de confidentialité</a></label>
+          <button type="submit" class="container__main__button send__button">
+            <span class="button__text">Envoyer</span>
+            <img src="img/arrow-send.png" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="sending__form__right">
+      <img src="img/sending_form_right.png" alt="" />
+    </div>
+    <div class="sending__form__right_mobile">
+      <img src="img/sending_for_right_mobile.png" alt="" />
+    </div>
+  </div>
+  <footer>
+    <div class="footer__info">
+      <p>Centre France Export (CFE) CIFAL Groupe © 2021</p>
+      <p>+7 968 468 16 30</p>
+      <p>ml@cfexport.ru</p>
+    </div>
+    <div class="footer__menu">
+      <ul class="footer__menu_list">
+        <li><a href="#" class="footer-menu-link">Contacts</a></li>
+        <li><a href="#" class="footer-menu-link">Site corporate CIFAL</a></li>
+        <li><a href="#" class="footer-menu-link">Mentions légales</a></li>
+        <li><a href="#" class="footer-menu-link">Accueil</a></li>
+        <li><a href="#" class="footer-menu-link">Notre équipe</a></li>
+        <li><a href="#" class="footer-menu-link">Nos services</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
 </html>

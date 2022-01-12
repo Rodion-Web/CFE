@@ -20,16 +20,21 @@ hr {
   display: none;
 }
 .header {
+  background: #1a1313;
+  height: 120px;
+  display: flex;
+}
+.header-main {
   background: url(../img/header-bg.png) no-repeat center top / cover;
   height: 744px;
   margin: 0 auto;
-  padding-top: 40px;
 }
 .navbar {
   max-width: 1140px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 28px;
 }
 .navbar p {
   font-family: "Mulish";
@@ -752,9 +757,9 @@ footer {
     width: 100%;
     z-index: 10000;
   }
-  .is-open {
+  /* .is-open {
     display: block;
-  }
+  } */
   .navbar-panel {
     display: none;
   }
