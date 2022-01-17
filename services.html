@@ -12,19 +12,46 @@
 
 <body>
   <header class="header" id="header">
-    <div class="container">
-      <div class="mobile__header">
-        <input type="checkbox" id="checkbox1" class="checkbox1 visuallyHidden" />
-        <label for="checkbox1">
-          <div class="hamburger hamburger1">
-            <span class="bar bar1"></span>
-            <span class="bar bar2"></span>
-            <span class="bar bar3"></span>
-            <span class="bar bar4"></span>
-          </div>
-        </label>
-        <div class="mobile__menu"></div>
+    <div class="mobile__header">
+      <input type="checkbox" id="checkbox1" class="checkbox1 visuallyHidden" />
+      <label for="checkbox1">
+        <div class="hamburger hamburger1">
+          <span class="bar bar1"></span>
+          <span class="bar bar2"></span>
+          <span class="bar bar3"></span>
+          <span class="bar bar4"></span>
+        </div>
+      </label>
+      <div class="mobile__menu">
+        <div class="navbar-panel-mobile">
+          <nav class="navbar-menu">
+            <ul class="menu">
+              <li>
+                <a href="#" class="menu-link">Accueil</a>
+              </li>
+              <li>
+                <a href="team.html" class="menu-link">Notre équipe</a>
+              </li>
+              <li>
+                <a href="./services.html" class="menu-link">Nos services</a>
+              </li>
+              <li>
+                <a href="./contacts.html" class="menu-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="mobile-language">
+          <a href="#">
+            <img src="img/russian.png" alt="" />
+          </a>
+          <a href="#">
+            <img src="img/eng.png" alt="" />
+          </a>
+        </div>
       </div>
+    </div>
+    <div class="container">
       <div class="navbar">
         <a href="./index.html" class="logo">
           <img src="img/logo.png" alt="logo: CFE" class="logo-image" />
@@ -102,20 +129,21 @@
     </div>
     <div class="container container__services__two">
       <div class="left">
-        <!-- <h2>Téléchargez notre brochure !</h2>
-          <p>
-            Pour vous offrir une gamme de services aussi complète, le CFE
-            s'appuie sur ses propres compétences et sur un réseau de partenaires
-            spécialisés, professionnels dans leur domaine. Nous avons choisi les
-            meilleures compétences disponibles sur le marché pour vous offrir un
-            éventail de services répondant à l'ensemble de vos demandes en
-            Russie sur le principe du "guichet unique'.
-          </p>
-          <button class="button__left">
+        <div>
+          <h1>Téléchargez notre brochure !</h1>
+          <p>Pour vous offrir une gamme de services aussi complète, le CFE s'appuie sur ses propres compétences et sur
+            un
+            réseau de
+            partenaires spécialisés, professionnels dans leur domaine. Nous avons choisi les meilleures compétences
+            disponibles sur
+            le marché pour vous offrir un éventail de services répondant à l'ensemble de vos demandes en Russie sur le
+            principe du
+            "guichet unique'.</p>
+          <button class="container__services__two_button">
             <span class="button__text">Télécharger</span>
-            <img src="img/arrow-send.png" alt="" />
-          </button> -->
-        <img src="img/telecharger.png" alt="" />
+            <img src="img/arrow2.png" alt="" />
+          </button>
+        </div>
       </div>
       <div class="right">
         <h2>Gamme Représentation Russie & CEI</h2>
@@ -130,9 +158,6 @@
               produits</span>
           </li>
         </ul>
-      </div>
-      <div class="left-mobile">
-        <img src="img/telecharger-mobile.png" alt="" />
       </div>
     </div>
   </div>
@@ -184,6 +209,8 @@
       </ul>
     </div>
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="../js/script.js"></script>
 </body>
 
 </html>

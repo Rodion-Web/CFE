@@ -11,6 +11,9 @@
 body {
   overflow-x: hidden;
 }
+.body-menu-active {
+  overflow: hidden;
+}
 
 hr {
   border: 1px solid #b7b7b7;
@@ -645,6 +648,44 @@ footer {
   color: #000000;
   width: 555px;
 }
+.container__services__two .left {
+  background: url(../img/telecharger.png) no-repeat;
+  height: 592px;
+}
+.container__services__two .left {
+  display: flex;
+  justify-content: center;
+}
+.container__services__two .left > div {
+  margin-left: 25px;
+}
+.container__services__two .left h1 {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  color: #ffffff;
+  width: 80%;
+}
+.container__services__two .left p {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #ffffff;
+  width: 311px;
+  margin-top: 144px;
+}
+.container__services__two_button {
+  border: 4px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 44px;
+  background: transparent;
+  width: 260px;
+  height: 80px;
+  cursor: pointer;
+  margin-top: 24px;
+}
 .left p,
 .right ul {
   font-family: "Mulish";
@@ -734,59 +775,74 @@ footer {
   background: red;
 }
 /* Media */
-@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+@media screen and (min-width: 1441px) {
+  .container__second__block {
+    width: 380px;
+  }
+  .container__second__block a {
+    margin-right: 345px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 479px) {
   body {
     overflow-x: hidden;
   }
   .header {
+    height: 0;
+  }
+  .header-main {
     background: url(../img/header-bg-mobile.png) no-repeat center top / cover;
     height: 634px;
     padding: 0;
   }
   /* header */
   .mobile__header {
-    max-width: 375px;
     display: flex;
     height: 87px;
+    position: absolute;
     background-color: #1a1313;
+    max-width: 479px;
+    width: 100%;
   }
   .mobile__menu {
     display: none;
     position: absolute;
     top: 87px;
+    max-width: 479px;
     width: 100%;
     z-index: 10000;
   }
-  /* .is-open {
-    display: block;
-  } */
+  .menu {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+  }
+  .menu li {
+    margin-top: 30px;
+  }
+  .mobile-language {
+    margin-top: 250px;
+    text-align: center;
+  }
   .navbar-panel {
     display: none;
   }
   .navbar {
     align-items: center;
+    display: flex;
+    justify-content: center;
   }
   .navbar p {
     display: none;
   }
   .navbar a {
-    left: 124px;
     top: 22px;
     position: absolute;
   }
   .container {
-    max-width: 375px;
-    margin: 0 auto;
-  }
-  /* Main container */
-  .container__main,
-  .container__second,
-  .container__third,
-  .sending__form {
-    max-width: 375px;
-  }
-  .container__main {
-    margin-left: 16px;
+    /* margin-top: 117px; */
   }
   .container__main h1 {
     font-size: 64px;
@@ -804,17 +860,13 @@ footer {
   /* Second container */
   .container__second {
     flex-direction: column;
-    padding-left: 16px;
     margin-bottom: 66px;
   }
   .container__second__block {
-    width: 319px;
-    padding-top: 24px;
-    padding-left: 24px;
-    position: relative;
+    width: auto;
   }
   .container__second__block a {
-    margin-left: 279px;
+    margin-left: 80%;
   }
   .container__second__block p {
     width: 216px;
@@ -825,12 +877,13 @@ footer {
   }
   /* Third container */
   .container__third {
-    margin-left: 16px;
     margin-top: 30px;
+    text-align: center;
   }
   .container__third > div {
     flex-direction: column;
     text-align: left;
+    align-items: center;
   }
   .container__third p {
     width: 343px;
@@ -841,30 +894,38 @@ footer {
   /* Sending form */
   .sending__form {
     margin-top: 41px;
+    justify-content: center;
+    align-items: center;
   }
   .sending__form__right {
     display: none;
   }
   .sending__form__right_mobile {
     display: block;
+    background: url(/img/sending-form-right-mobile.png) no-repeat;
+    background-size: cover;
     height: 752px;
+    max-width: 479px;
+    width: 100%;
   }
   .sending__form__left {
     padding-left: 16px;
     padding-right: 16px;
-    max-width: 305px;
+    max-width: 87%;
     padding-top: 20px;
     height: 592px;
+    text-align: center;
   }
   .inputs {
     position: absolute;
     margin-left: 16px;
-    margin-top: 104px;
   }
   .question_block_edit,
-  .email_block_edit,
-  .sending__form__left > p {
-    width: 302px;
+  .email_block_edit {
+    width: 95%;
+  }
+  .sending__form__left p {
+    width: 100%;
   }
   .custom-checkbox + label {
     display: block;
@@ -874,7 +935,12 @@ footer {
     margin-top: 22px;
   }
   /* Services page */
-
+  .container__services__one {
+    margin-top: 0;
+  }
+  .container__services {
+    margin-top: 117px;
+  }
   .container__services__one,
   .container__services__two {
     flex-direction: column;
@@ -891,16 +957,26 @@ footer {
   .container__services__form {
     margin-top: -5px;
   }
-  .left {
-    display: none;
+  .container__services__two .left h1,
+  .container__services__two .left p {
+    padding: 0;
   }
-  .left-mobile {
-    display: block;
+  .container__services__two .left p {
+    width: 95%;
   }
-
+  .container__services__two .left {
+    background: url(/img/telecharger-fon-mobile.png) no-repeat;
+    background-size: cover;
+    height: 594px;
+    max-width: 479px;
+    width: 100%;
+  }
+  .container__services__two_button {
+    width: 95%;
+  }
   /* Footer */
   footer {
-    width: 343px;
+    max-width: 479px;
     flex-direction: column;
     padding-left: 16px;
     padding-right: 16px;

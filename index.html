@@ -11,8 +11,8 @@
 </head>
 
 <body>
-  <header class="header header-main" id="header">
-    <div class="container">
+  <div>
+    <header class="header header-main" id="header">
       <div class="mobile__header">
         <input type="checkbox" id="checkbox1" class="checkbox1 visuallyHidden" />
         <label for="checkbox1">
@@ -23,159 +23,188 @@
             <span class="bar bar4"></span>
           </div>
         </label>
-        <div class="mobile__menu"></div>
-      </div>
-      <div class="navbar">
-        <a href="./index.html" class="logo">
-          <img src="img/logo.png" alt="logo: CFE" class="logo-image" />
-        </a>
-        <p>Centre France Export (CFE) CIFAL Groupe</p>
-        <!-- Навигация -->
-        <div class="navbar-panel">
-          <nav class="navbar-menu">
-            <ul class="menu">
-              <li class="menu-item">
-                <a href="#" class="menu-link">Accueil</a>
-              </li>
-              <li class="menu-item">
-                <a href="team.html" class="menu-link">Notre équipe</a>
-              </li>
-              <li class="menu-item">
-                <a href="./services.html" class="menu-link">Nos services</a>
-              </li>
-              <li class="menu-item">
-                <a href="./contacts.html" class="menu-link">Contacts</a>
-              </li>
-              <li class="menu-item">
-                <a href="#" class="menu-link">
-                  <img src="img/russian.png" alt="" />
-                </a>
-              </li>
-              <li class="menu-item">
-                <a href="#" class="menu-link">
-                  <img src="img/eng.png" alt="" />
-                </a>
-              </li>
-            </ul>
-          </nav>
+        <div class="mobile__menu">
+          <div class="navbar-panel-mobile">
+            <nav class="navbar-menu">
+              <ul class="menu">
+                <li>
+                  <a href="#" class="menu-link">Accueil</a>
+                </li>
+                <li>
+                  <a href="team.html" class="menu-link">Notre équipe</a>
+                </li>
+                <li>
+                  <a href="./services.html" class="menu-link">Nos services</a>
+                </li>
+                <li>
+                  <a href="./contacts.html" class="menu-link">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="mobile-language">
+            <a href="#">
+              <img src="img/russian.png" alt="" />
+            </a>
+            <a href="#">
+              <img src="img/eng.png" alt="" />
+            </a>
+          </div>
         </div>
       </div>
-      <div class="container container__main">
-        <h1>Le CFE : votre partenaire export en Russie</h1>
-        <p>Notre devise : efficacité et flexibilité !</p>
-        <button class="container__main__button">
-          <span class="button__text">En savior plus</span>
-          <img src="img/arrow-button.png" alt="" />
-        </button>
-      </div>
-    </div>
-  </header>
-  <div class="container__second">
-    <div class="container__second__block">
-      <h3>Nos services</h3>
-      <p>
-        Le CFE vous offre une gamme complète de services pour assurer votre
-        développement commercial efficace en Russie.
-      </p>
-      <a href="services.html">
-        <img src="img/arrow2.png" alt="" />
-      </a>
-    </div>
-    <div class="container__second__block">
-      <h3>Nos experts</h3>
-      <p>
-        Le CFE vous conseille à toutes les étapes de votre projet export en
-        Russie grâce à une équipe d'experts sectoriels expérimentés.
-      </p>
-      <a href="./team.html">
-        <img src="img/arrow2.png" alt="" />
-      </a>
-    </div>
-    <div class="container__second__block">
-      <h3>Nos valeurs</h3>
-      <p>
-        Le CFE étudie avec vous et propose la meilleure approche du marché
-        russe dans un souci d'efficacité, de fiabilité et de succès
-        commercial.
-      </p>
-      <a href="#">
-        <img src="img/arrow2.png" alt="" />
-      </a>
-    </div>
-  </div>
-  <hr />
-  <div class="container container__third">
-    <h1>À propos de la société</h1>
-    <div>
-      <p>
-        Le CFE est le premier centre de coopération technologique d’une
-        Chambre de Commerce et d’Industrie. Notre mission est de renforcer la
-        coopération entre les filières de hautes technologies françaises et
-        russes à travers des activités ciblées permettant aux entreprises de
-        toutes tailles d’identifier des opportunités de coopération
-        technologique, industrielle et commerciale. Nos équipes possèdent une
-        double expertise des secteurs technologiques de pointe français et
-        russes. Nous vous apportons notre connaissance des marchés; nos
-        relations privilégiées dans les
-      </p>
-      <p>
-        entreprises privées et dans les organismes d’Etat; et notre savoir
-        faire en termes de promotion et de représentation afin de contribuer à
-        votre développement. Nous sommes un département de la Chambre de
-        Commerce et d’Industrie France-Russie qui, depuis plus de 20 ans,
-        soutient les relations économiques et commerciales bilatérales.
-      </p>
-    </div>
-  </div>
-  <div class="sending__form">
-    <div class="inputs">
-      <div class="sending__form__left">
-        <h1>Vous avez encore des questions ?</h1>
-        <p>Demandez des informations complémentaires ou un devis !</p>
-        <form action="send.php" method="POST">
-          <div class="email_block">
-            <input type="text" name="name" placeholder="E-mail" class="email_block_edit" />
+      <div class="container">
+        <div class="navbar">
+          <a href="./index.html" class="logo">
+            <img src="img/logo.png" alt="logo: CFE" class="logo-image" />
+          </a>
+          <p>Centre France Export (CFE) CIFAL Groupe</p>
+          <!-- Навигация -->
+          <div class="navbar-panel">
+            <nav class="navbar-menu">
+              <ul class="menu">
+                <li class="menu-item">
+                  <a href="#" class="menu-link">Accueil</a>
+                </li>
+                <li class="menu-item">
+                  <a href="team.html" class="menu-link">Notre équipe</a>
+                </li>
+                <li class="menu-item">
+                  <a href="./services.html" class="menu-link">Nos services</a>
+                </li>
+                <li class="menu-item">
+                  <a href="./contacts.html" class="menu-link">Contacts</a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-link">
+                    <img src="img/russian.png" alt="" />
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="#" class="menu-link">
+                    <img src="img/eng.png" alt="" />
+                  </a>
+                </li>
+              </ul>
+            </nav>
           </div>
-          <div class="question_block">
-            <input type="text" name="phone" placeholder="Écrivez votre question" class="question_block_edit" />
-          </div>
-        </form>
-        <div class="checkbox">
-          <input class="custom-checkbox" type="checkbox" id="color-1" name="color-1" value="indigo" required />
-          <label for="color-1">Je suis d'accord avec la
-            <a href="#">politique de confidentialité</a></label>
-          <button type="submit" class="container__main__button send__button">
-            <span class="button__text">Envoyer</span>
-            <img src="img/arrow-send.png" alt="" />
+        </div>
+        <div class="container container__main">
+          <h1>Le CFE : votre partenaire export en Russie</h1>
+          <p>Notre devise : efficacité et flexibilité !</p>
+          <button class="container__main__button">
+            <span class="button__text">En savior plus</span>
+            <img src="img/arrow-button.png" alt="" />
           </button>
         </div>
       </div>
+    </header>
+    <div class="container__second">
+      <div class="container__second__block">
+        <h3>Nos services</h3>
+        <p>
+          Le CFE vous offre une gamme complète de services pour assurer votre
+          développement commercial efficace en Russie.
+        </p>
+        <a href="services.html">
+          <img src="img/arrow2.png" alt="" />
+        </a>
+      </div>
+      <div class="container__second__block">
+        <h3>Nos experts</h3>
+        <p>
+          Le CFE vous conseille à toutes les étapes de votre projet export en
+          Russie grâce à une équipe d'experts sectoriels expérimentés.
+        </p>
+        <a href="./team.html">
+          <img src="img/arrow2.png" alt="" />
+        </a>
+      </div>
+      <div class="container__second__block">
+        <h3>Nos valeurs</h3>
+        <p>
+          Le CFE étudie avec vous et propose la meilleure approche du marché
+          russe dans un souci d'efficacité, de fiabilité et de succès
+          commercial.
+        </p>
+        <a href="#">
+          <img src="img/arrow2.png" alt="" />
+        </a>
+      </div>
     </div>
-    <div class="sending__form__right">
-      <img src="img/sending_form_right.png" alt="" />
+    <hr />
+    <div class="container container__third">
+      <h1>À propos de la société</h1>
+      <div>
+        <p>
+          Le CFE est le premier centre de coopération technologique d’une
+          Chambre de Commerce et d’Industrie. Notre mission est de renforcer la
+          coopération entre les filières de hautes technologies françaises et
+          russes à travers des activités ciblées permettant aux entreprises de
+          toutes tailles d’identifier des opportunités de coopération
+          technologique, industrielle et commerciale. Nos équipes possèdent une
+          double expertise des secteurs technologiques de pointe français et
+          russes. Nous vous apportons notre connaissance des marchés; nos
+          relations privilégiées dans les
+        </p>
+        <p>
+          entreprises privées et dans les organismes d’Etat; et notre savoir
+          faire en termes de promotion et de représentation afin de contribuer à
+          votre développement. Nous sommes un département de la Chambre de
+          Commerce et d’Industrie France-Russie qui, depuis plus de 20 ans,
+          soutient les relations économiques et commerciales bilatérales.
+        </p>
+      </div>
     </div>
-    <div class="sending__form__right_mobile">
-      <img src="./img/sending_for_right_mobile.png" alt="" />
+    <div class="sending__form">
+      <div class="inputs">
+        <div class="sending__form__left">
+          <h1>Vous avez encore des questions ?</h1>
+          <p>Demandez des informations complémentaires ou un devis !</p>
+          <form action="send.php" method="POST">
+            <div class="email_block">
+              <input type="text" name="name" placeholder="E-mail" class="email_block_edit" />
+            </div>
+            <div class="question_block">
+              <input type="text" name="phone" placeholder="Écrivez votre question" class="question_block_edit" />
+            </div>
+          </form>
+          <div class="checkbox">
+            <input class="custom-checkbox" type="checkbox" id="color-1" name="color-1" value="indigo" required />
+            <label for="color-1">Je suis d'accord avec la
+              <a href="#">politique de confidentialité</a></label>
+            <button type="submit" class="container__main__button send__button">
+              <span class="button__text">Envoyer</span>
+              <img src="img/arrow-send.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="sending__form__right">
+        <img src="img/sending_form_right.png" alt="" />
+      </div>
+      <div class="sending__form__right_mobile">
+        <!-- <img src="./img/sending_for_right_mobile.png" alt="" /> -->
+      </div>
     </div>
-  </div>
-  <footer>
-    <div class="footer__info">
-      <p>Centre France Export (CFE) CIFAL Groupe © 2021</p>
-      <p>+7 968 468 16 30</p>
-      <p>ml@cfexport.ru</p>
-    </div>
-    <div class="footer__menu">
-      <ul class="footer__menu_list">
-        <li><a href="#" class="footer-menu-link">Contacts</a></li>
-        <li><a href="#" class="footer-menu-link">Site corporate CIFAL</a></li>
-        <li><a href="#" class="footer-menu-link">Mentions légales</a></li>
-        <li><a href="#" class="footer-menu-link">Accueil</a></li>
-        <li><a href="#" class="footer-menu-link">Notre équipe</a></li>
-        <li><a href="#" class="footer-menu-link">Nos services</a></li>
-      </ul>
-    </div>
-  </footer>
-  <script src="../js/script.js"></script>
+    <footer>
+      <div class="footer__info">
+        <p>Centre France Export (CFE) CIFAL Groupe © 2021</p>
+        <p>+7 968 468 16 30</p>
+        <p>ml@cfexport.ru</p>
+      </div>
+      <div class="footer__menu">
+        <ul class="footer__menu_list">
+          <li><a href="#" class="footer-menu-link">Contacts</a></li>
+          <li><a href="#" class="footer-menu-link">Site corporate CIFAL</a></li>
+          <li><a href="#" class="footer-menu-link">Mentions légales</a></li>
+          <li><a href="#" class="footer-menu-link">Accueil</a></li>
+          <li><a href="#" class="footer-menu-link">Notre équipe</a></li>
+          <li><a href="#" class="footer-menu-link">Nos services</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
