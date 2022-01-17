@@ -902,7 +902,7 @@ footer {
   }
   .sending__form__right_mobile {
     display: block;
-    background: url(/img/sending-form-right-mobile.png) no-repeat;
+    background: url(../img/sending-form-right-mobile.png) no-repeat;
     background-size: cover;
     height: 752px;
     max-width: 479px;
@@ -965,7 +965,7 @@ footer {
     width: 95%;
   }
   .container__services__two .left {
-    background: url(/img/telecharger-fon-mobile.png) no-repeat;
+    background: url(../img/telecharger-fon-mobile.png) no-repeat;
     background-size: cover;
     height: 594px;
     max-width: 479px;
