@@ -1041,7 +1041,8 @@ footer {
   }
   .container__one__right {
     background-image: url(../img/team-page-forn-mobile.png);
-    width: 376px;
+    max-width: 476px;
+    width: 100%;
     height: 710px;
   }
   .container__two {
