@@ -493,7 +493,7 @@ footer {
   background: #e0e0e0;
 }
 .container__one__left > div {
-  padding: 89px 32px 0 170px;
+  padding: 140px 32px 0 170px;
   width: 438px;
 }
 .container__one__left h1 {
@@ -646,6 +646,9 @@ footer {
 .container__services__two {
   display: flex;
   justify-content: space-between;
+}
+.container__services {
+  margin-top: 210px;
 }
 .container__services h1 {
   font-family: "Mulish";
