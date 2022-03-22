@@ -727,6 +727,7 @@ footer {
 .contacts {
   display: flex;
   justify-content: space-between;
+  margin-top: 90px;
 }
 .contacts__map .inputs {
   display: none;
@@ -761,7 +762,7 @@ footer {
   width: 320px;
 }
 .contacts > div:first-child {
-  margin-left: 100px;
+  margin-left: 80px;
   margin-right: 50px;
 }
 
