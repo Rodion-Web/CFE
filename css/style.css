@@ -27,17 +27,28 @@ hr {
   height: 120px;
   display: flex;
 }
+.header__services,
+.header__contacts,
+.header__team {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+}
 .header-main {
   background: url(../img/header-bg.png) no-repeat center top / cover;
   height: 744px;
   margin: 0 auto;
 }
 .navbar {
-  max-width: 1140px;
+  max-width: 1100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 28px;
+}
+.logo-text {
+  width: 50px;
 }
 .navbar p {
   font-family: "Mulish";
@@ -45,7 +56,7 @@ hr {
   font-weight: bold;
   font-size: 14px;
   color: #ffffff;
-  width: 181px;
+  width: 184px;
   margin-left: 23px;
 }
 .navbar-panel {
@@ -67,13 +78,13 @@ hr {
 .menu {
   list-style: none;
   margin: 0;
-  padding-left: 260px;
+  padding-left: 174px;
   display: flex;
 }
-.menu-item:not(:last-child) {
+.menu-item:nth-child(-n + 4) {
   margin-right: 32px;
 }
-.menu-item:nth-last-child(2) {
+.menu-item:nth-child(n + 5):nth-child(-n + 6) {
   margin-right: 10px;
 }
 .menu-link {
@@ -166,12 +177,10 @@ hr {
 }
 /* main */
 .container {
-  max-width: 1140px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 .container__main {
-  max-width: 1140px;
-  margin: 0 auto;
   margin-top: 72px;
 }
 .container__main h1 {
@@ -263,8 +272,6 @@ hr {
 }
 /* Third container */
 .container__third {
-  max-width: 1140px;
-  margin: 0 auto;
   margin-top: 64px;
 }
 .container__third h1 {
@@ -305,9 +312,9 @@ hr {
 
 .sending__form__left {
   background: #e0e0e0;
-  padding-left: 148px;
+  padding-left: 170px;
   padding-top: 96px;
-  padding-right: 234px;
+  padding-right: 170px;
   height: 648px;
 }
 .sending__form__left h1 {
@@ -427,22 +434,23 @@ footer {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  padding-left: 150px;
-  padding-right: 150px;
+  padding-left: 170px;
+  padding-right: 170px;
   height: 200px;
   background: #1a1313;
 }
 .footer__menu {
   margin-top: 30px;
-  margin-right: -40px;
 }
 .footer__menu ul {
   column-count: 2;
   list-style: none;
-  margin-left: 40px;
 }
 .footer__menu_list li {
   margin-bottom: 10px;
+}
+.footer__menu_list li:nth-child(n + 4) {
+  margin-left: 50px;
 }
 .footer-menu-link {
   font-family: "SF Pro Display", sans-serif;
@@ -456,7 +464,6 @@ footer {
 }
 .footer__info {
   margin-top: 30px;
-  margin-left: -40px;
 }
 .footer__info p {
   font-family: "Mulish";
@@ -477,7 +484,8 @@ footer {
   display: flex;
   justify-content: space-between;
 }
-.container__one__right img {
+.container__one__right {
+  background-image: url(/img/team-page-fon.png);
   width: 821px;
   height: 616px;
 }
@@ -485,7 +493,7 @@ footer {
   background: #e0e0e0;
 }
 .container__one__left > div {
-  padding: 89px 32px 0 150px;
+  padding: 89px 32px 0 170px;
   width: 438px;
 }
 .container__one__left h1 {
@@ -720,6 +728,9 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+.contacts__map .inputs {
+  display: none;
+}
 .contacts h1 {
   font-family: "Mulish";
   font-style: normal;
@@ -799,10 +810,11 @@ footer {
   .mobile__header {
     display: flex;
     height: 87px;
-    position: absolute;
     background-color: #1a1313;
     max-width: 479px;
     width: 100%;
+    position: fixed;
+    z-index: 1;
   }
   .mobile__menu {
     display: none;
@@ -810,7 +822,6 @@ footer {
     top: 87px;
     max-width: 479px;
     width: 100%;
-    z-index: 10000;
   }
   .menu {
     padding-left: 0;
@@ -839,10 +850,8 @@ footer {
   }
   .navbar a {
     top: 22px;
-    position: absolute;
-  }
-  .container {
-    /* margin-top: 117px; */
+    position: fixed;
+    z-index: 1;
   }
   .container__main h1 {
     font-size: 64px;
@@ -988,12 +997,11 @@ footer {
   }
   .footer__menu ul {
     column-count: 1;
-    margin-left: -23px;
+    margin-left: -40px;
     margin-top: -8px;
   }
   .footer__info {
     position: absolute;
-    margin-left: 16px;
     margin-top: 200px;
   }
   .footer__info p:nth-child(2) {
@@ -1010,5 +1018,111 @@ footer {
     top: 48px;
     position: absolute;
     width: 329px;
+  }
+  .footer__menu_list li:nth-child(n + 4) {
+    margin-left: 0;
+  }
+  /* Page team */
+  .management {
+    max-width: 479px;
+    width: 100%;
+    margin-top: 86px;
+  }
+  .container__one__left {
+    width: 343px;
+    position: absolute;
+    margin: 44px 16px 44px 16px;
+  }
+  .container__one__left > div {
+    padding: 15px 15px 0 15px;
+    height: 612px;
+    width: 311px;
+  }
+  .container__one__right {
+    background-image: url(/img/team-page-forn-mobile.png);
+    width: 376px;
+    height: 710px;
+  }
+  .container__two {
+    flex-direction: column;
+    padding-left: 15px;
+  }
+  .card-people {
+    flex-direction: column;
+    max-width: 343px;
+  }
+  .card-people img {
+    width: 163px;
+    height: 163px;
+  }
+  .container__two h1 {
+    font-size: 32px;
+    width: 343px;
+  }
+  .card-people-text {
+    margin: 0;
+  }
+  .container__three {
+    margin-top: 44px;
+    padding-left: 15px;
+  }
+  .container__three > div {
+    flex-direction: column;
+    margin-top: 32px;
+  }
+  .container__three h1 {
+    font-size: 32px;
+    width: 343px;
+  }
+  .container__four > div {
+    flex-direction: column;
+    padding-left: 15px;
+  }
+  .container__four > div {
+    margin-top: 24px;
+    margin-bottom: 52px;
+  }
+  .container__four__block {
+    width: 311px;
+    height: 154px;
+  }
+  .container__five {
+    padding-left: 15px;
+    margin-top: 42px;
+  }
+  .container__five > div {
+    flex-direction: column;
+  }
+  .container__five h1 {
+    font-size: 32px;
+    width: 343px;
+  }
+  /* Page contacts */
+  .header__contacts {
+    display: block;
+  }
+  .contacts {
+    flex-direction: column;
+  }
+  .contacts__map {
+    margin-top: 59px;
+    height: 908px;
+  }
+  .contacts__map iframe {
+    max-width: 479px;
+    width: 100%;
+    height: 328px;
+  }
+  .container__contacts {
+    display: none;
+  }
+  .contacts > div:first-child {
+    margin-left: 5px;
+    margin-top: 40px;
+    margin-right: 0;
+  }
+  .contacts__map .inputs {
+    display: block;
+    margin-top: 280px;
   }
 }
