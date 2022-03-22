@@ -485,7 +485,7 @@ footer {
   justify-content: space-between;
 }
 .container__one__right {
-  background-image: url(/img/team-page-fon.png);
+  background-image: url(../img/team-page-fon.png);
   width: 821px;
   height: 616px;
 }
