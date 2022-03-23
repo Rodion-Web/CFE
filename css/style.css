@@ -861,6 +861,9 @@ footer {
     font-size: 64px;
     width: 312px;
   }
+  .container__main__eng h1 {
+    font-size: 57px;
+  }
   .container__main p {
     margin-top: -40px;
     line-height: 1.3em;
