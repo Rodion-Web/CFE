@@ -208,7 +208,7 @@ hr {
   border-radius: 44px;
   width: 285px;
   height: 80px;
-  margin-top: 37px;
+  /* margin-top: 37px; */
   cursor: pointer;
 }
 /* .container__main__button:hover {
