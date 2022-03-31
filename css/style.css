@@ -266,7 +266,7 @@ hr {
   position: absolute;
 }
 .container__second__block a {
-  margin-left: 373px;
+  margin-left: 84%;
   position: absolute;
   bottom: 24px;
 }
@@ -793,9 +793,6 @@ footer {
 @media screen and (min-width: 1441px) {
   .container__second__block {
     width: 380px;
-  }
-  .container__second__block a {
-    margin-right: 345px;
   }
 }
 @media screen and (min-width: 375px) and (max-width: 479px) {
