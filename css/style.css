@@ -120,7 +120,7 @@ hr {
 .hamburger .bar {
   padding: 0;
   width: 24px;
-  height: 1px;
+  height: 2px;
   background-color: #ffffff;
   display: block;
   border-radius: 4px;
