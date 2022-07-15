@@ -147,7 +147,7 @@ hr {
 /* HAMBURGER 1 */
 .checkbox1:checked + label > .hamburger1 > .bar1 {
   transform: rotate(44deg);
-  transform-origin: 5%;
+  transform-origin: 11.3%;
   width: 24px;
 }
 
