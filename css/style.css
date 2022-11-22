@@ -975,6 +975,8 @@ footer {
     align-items: center;
     display: flex;
     justify-content: center;
+    max-width: 479px;
+    width: 100%;
   }
 
   .navbar p {
