@@ -2,12 +2,30 @@
 
 @font-face {
   font-family: "SFPRODISPLAYREGULAR";
-  src: url("../fonts/sf-pro-display-cufonfonts/SFPRODISPLAYREGULAR.OTF") format("truetype");
+  src: url("../fonts/sf-pro-display-cufonfonts/SFPRODISPLAYREGULAR.OTF") format("opentype");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Bebas Neue";
   src: url("../fonts/Bebas_Neue/BebasNeue-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+:focus-visible {
+  outline: 3px solid #1d77fe;
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
 }
 
 body {

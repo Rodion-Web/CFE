@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CFE</title>
+  <meta name="description" content="Centre France Export supports companies with commercial development in Russia and the CIS." />
+  <title>Centre France Export | Your export partner</title>
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="../css/normalize.css" />
 </head>
@@ -100,7 +101,7 @@
           <h1>CFE : Your export partner in Russia, Central Asia and the Caucasus
           </h1>
           <p>Out motto is efficiency and flexibility</p>
-          <button class="container__main__button">
+          <button type="button" class="container__main__button">
             <span class="button__text">More about us</span>
             <img src="../img/arrow-button.png" alt="" />
           </button>
@@ -125,7 +126,7 @@
           while keeping our standards of efficiency, reliability and business success.
 
         </p>
-        <a href="#">
+        <a href="#about">
           <img src="../img/arrow2.png" alt="" />
         </a>
       </div>
@@ -141,7 +142,7 @@
       </div>
     </div>
     <hr />
-    <div class="container container__third">
+    <div class="container container__third" id="about">
       <h1>About CFE</h1>
       <div>
         <p>
@@ -159,7 +160,7 @@
         <div class="sending__form__left">
           <h1>Vous avez encore des questions ?</h1>
           <p>Demandez des informations complémentaires ou un devis !</p>
-          <form action="send.php" method="POST">
+          <form action="../send.php" method="POST">
             <div class="email_block">
               <input type="text" name="name" placeholder="E-mail" class="email_block_edit" />
             </div>
@@ -202,8 +203,7 @@
         </ul>
       </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="../js/script.js"></script>
+    <script src="../js/script.js" defer></script>
 </body>
 
 </html>
